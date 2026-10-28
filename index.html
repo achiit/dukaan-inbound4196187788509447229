@@ -1,0 +1,288 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Aslam Textile</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Hind:wght@400;500;600&display=swap">
+<style>
+/* Layout: one long scroll, zari-bordered sections on deep maroon, like a saree pallu from edge to edge */
+:root {
+  --bg: #2a0a12;
+  --bg-2: #3a0f1a;
+  --card: #4a1422;
+  --fg: #f6e9d2;
+  --muted: #c9aa98;
+  --zari: #e0a93f;
+  --zari-soft: #b98a30;
+  --emerald: #0f6b4f;
+  --line: rgba(224,169,63,.35);
+  --font-display: "Rozha One", "Noto Serif Devanagari", Georgia, serif;
+  --font-body: "Hind", "Noto Sans Devanagari", system-ui, sans-serif;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0;
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--zari); outline-offset: 3px; }
+.wrap { max-width: 1040px; margin: 0 auto; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 400; margin: 0; text-wrap: balance; line-height: 1.15; }
+.eyebrow { font-size: .8rem; letter-spacing: .18em; text-transform: uppercase; color: var(--zari); font-weight: 600; }
+
+/* zari border strip */
+.border {
+  height: 22px;
+  background-color: var(--bg-2);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='22' viewBox='0 0 44 22'%3E%3Cpath d='M22 2 L34 11 L22 20 L10 11 Z' fill='none' stroke='%23e0a93f' stroke-width='1.6'/%3E%3Cpath d='M22 7 L28 11 L22 15 L16 11 Z' fill='%23e0a93f'/%3E%3Cpath d='M0 11 H8 M36 11 H44' stroke='%23e0a93f' stroke-width='1.2'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: center;
+  border-block: 1px solid var(--line);
+  margin-inline: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+}
+
+/* top bar */
+header.top {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+  padding-block: 18px;
+}
+.brand { font-family: var(--font-display); font-size: 1.35rem; color: var(--zari); text-decoration: none; }
+nav { display: flex; gap: 18px; flex-wrap: wrap; font-size: .95rem; }
+nav a { text-decoration: none; color: var(--muted); }
+nav a:hover { color: var(--fg); }
+
+/* hero */
+.hero { padding-block: 56px 64px; display: grid; gap: 28px; grid-template-columns: 1.2fr .8fr; align-items: center; }
+.hero > * { min-width: 0; }
+.hero h1 { font-size: clamp(2.4rem, 7vw, 4.4rem); margin-block: 14px 8px; }
+.hero h1 span { color: var(--zari); }
+.hindi { font-family: var(--font-display); color: var(--zari); font-size: 1.25rem; margin: 0 0 14px; }
+.lead { max-width: 34em; color: var(--fg); margin: 0 0 26px; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.btn {
+  display: inline-block; padding: 12px 22px; font: 600 1rem var(--font-body); text-decoration: none;
+  border: 1.5px solid var(--zari); color: var(--zari); border-radius: 2px; cursor: pointer; background: transparent;
+}
+.btn.solid { background: var(--zari); color: #2a0a12; }
+.btn:hover { filter: brightness(1.12); }
+
+/* hero saree illustration */
+.saree {
+  aspect-ratio: 3 / 4; max-width: 100%; width: min(100%, 340px); margin-inline: auto; position: relative;
+  border: 1px solid var(--zari);
+  background:
+    radial-gradient(circle at 50% 50%, var(--zari) 0 2.5px, transparent 3px) 0 0 / 28px 28px,
+    linear-gradient(160deg, #8a1230, #5c0b22 60%, #3a0716);
+  box-shadow: 0 0 0 6px var(--bg), 0 0 0 7px var(--line);
+}
+.saree::before { /* pallu */
+  content: ""; position: absolute; inset: auto 0 0 0; height: 30%;
+  background-color: #0f6b4f;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='44' height='22' viewBox='0 0 44 22'%3E%3Cpath d='M22 2 L34 11 L22 20 L10 11 Z' fill='none' stroke='%23e0a93f' stroke-width='1.6'/%3E%3Cpath d='M22 7 L28 11 L22 15 L16 11 Z' fill='%23e0a93f'/%3E%3C/svg%3E");
+  background-size: 44px 22px; border-top: 3px solid var(--zari);
+}
+.saree::after { /* border band */
+  content: ""; position: absolute; inset: 0 auto 0 0; width: 14px;
+  background: repeating-linear-gradient(180deg, var(--zari) 0 6px, transparent 6px 10px);
+  opacity: .85;
+}
+
+/* sections */
+section { padding-block: 64px; }
+section > .wrap > h2 { font-size: clamp(1.8rem, 4.5vw, 2.6rem); margin-block: 10px 12px; }
+.sub { color: var(--muted); max-width: 36em; margin: 0 0 32px; }
+
+/* collection */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 22px; }
+.piece { background: var(--card); border: 1px solid var(--line); display: grid; }
+.piece .cloth { aspect-ratio: 4 / 3; max-width: 100%; position: relative; border-bottom: 3px solid var(--zari); }
+.piece .cloth::after { content: ""; position: absolute; inset: auto 0 0 0; height: 24%; background: rgba(0,0,0,.18); border-top: 1px solid var(--zari); }
+.piece .info { padding: 16px 18px 20px; }
+.piece h3 { font-size: 1.2rem; margin-bottom: 6px; color: var(--zari); }
+.piece p { margin: 0; font-size: .95rem; color: var(--muted); }
+.c-banarasi { background: radial-gradient(circle, var(--zari) 0 2px, transparent 2.6px) 0 0 / 22px 22px, #7a1029; }
+.c-bridal { background: radial-gradient(circle, #f4d58a 0 2.4px, transparent 3px) 0 0 / 16px 16px, #a0141f; }
+.c-silk { background: repeating-linear-gradient(135deg, rgba(224,169,63,.35) 0 2px, transparent 2px 14px), #0f6b4f; }
+.c-georgette { background: radial-gradient(circle, rgba(255,255,255,.55) 0 3px, transparent 3.5px) 0 0 / 30px 30px, #c4607a; }
+.c-festive { background: repeating-linear-gradient(90deg, rgba(224,169,63,.5) 0 3px, transparent 3px 20px), #4b1d6b; }
+.c-cotton { background: repeating-linear-gradient(0deg, rgba(246,233,210,.4) 0 2px, transparent 2px 12px), #25446b; }
+
+/* occasions */
+.occasions { background: var(--bg-2); border-block: 1px solid var(--line); }
+.occ { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0; border: 1px solid var(--line); }
+.occ div { padding: 22px 20px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); margin: 0 -1px -1px 0; min-width: 0; }
+.occ h3 { font-size: 1.25rem; color: var(--zari); margin-bottom: 4px; }
+.occ .hi { font-family: var(--font-display); color: var(--muted); font-size: .95rem; margin-bottom: 8px; }
+.occ p { margin: 0; font-size: .95rem; }
+
+/* about */
+.about { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+.about > * { min-width: 0; }
+.about p { margin: 0 0 16px; }
+.facts { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1px solid var(--line); }
+.facts li { padding: 14px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 8.5rem 1fr; gap: 12px; }
+.facts b { color: var(--zari); font-weight: 600; }
+
+/* contact */
+.contact-card { border: 1px solid var(--zari); background: var(--card); padding: 28px; display: grid; gap: 22px; grid-template-columns: 1fr 1fr; }
+.contact-card > * { min-width: 0; }
+.contact-card h3 { font-size: 1.1rem; color: var(--zari); margin-bottom: 6px; }
+.contact-card p { margin: 0; }
+.num { font-size: 1.3rem; font-weight: 600; letter-spacing: .02em; }
+.copy { margin-top: 10px; }
+
+footer { padding-block: 32px 40px; text-align: center; color: var(--muted); font-size: .9rem; }
+footer .brand { display: block; margin-bottom: 6px; }
+
+@media (max-width: 720px) {
+  .hero, .about, .contact-card { grid-template-columns: 1fr; }
+  .hero { padding-block: 36px 44px; }
+  section { padding-block: 48px; }
+  .facts li { grid-template-columns: 1fr; gap: 2px; }
+  .saree { width: min(100%, 260px); }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+
+<div class="border" aria-hidden="true"></div>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top">Aslam Textile</a>
+    <nav aria-label="Main">
+      <a href="#collection">Collection</a>
+      <a href="#occasions">Occasions</a>
+      <a href="#about">About</a>
+      <a href="#contact">Visit us</a>
+    </nav>
+  </header>
+</div>
+
+<main id="top">
+  <div class="wrap hero">
+    <div>
+      <span class="eyebrow">Banarasi &amp; traditional sarees</span>
+      <h1>A name you trust for <span>every saree</span></h1>
+      <p class="hindi">हर मौके की साड़ी, भरोसे के साथ</p>
+      <p class="lead">Aslam Textile brings you Banarasi and traditional sarees in every type and every design. The saree is the dress of India, and we help you find the right one for your wedding, your festival or an ordinary Tuesday.</p>
+      <div class="actions">
+        <a class="btn solid" href="#collection">See the collection</a>
+        <a class="btn" href="#contact">Find the shop</a>
+      </div>
+    </div>
+    <div class="saree" role="img" aria-label="Illustration of a maroon Banarasi saree with gold buti and an emerald pallu"></div>
+  </div>
+  <div class="border" aria-hidden="true"></div>
+
+  <section id="collection">
+    <div class="wrap">
+      <span class="eyebrow">Collection · संग्रह</span>
+      <h2>Sarees in every weave and colour</h2>
+      <p class="sub">A look at the kinds of sarees we sell. Come to the shop to see the full range in person and feel the fabric.</p>
+      <div class="grid">
+        <article class="piece"><div class="cloth c-banarasi"></div><div class="info"><h3>Banarasi Sarees</h3><p>Rich weaves with zari work, the saree Varanasi is known for.</p></div></article>
+        <article class="piece"><div class="cloth c-bridal"></div><div class="info"><h3>Bridal Sarees</h3><p>Heavy borders and deep reds for the wedding day.</p></div></article>
+        <article class="piece"><div class="cloth c-silk"></div><div class="info"><h3>Silk Sarees</h3><p>Smooth, graceful silk for ceremonies and family functions.</p></div></article>
+        <article class="piece"><div class="cloth c-festive"></div><div class="info"><h3>Festive &amp; Party Wear</h3><p>Bold colours and shine for Eid, Diwali and celebrations.</p></div></article>
+        <article class="piece"><div class="cloth c-georgette"></div><div class="info"><h3>Georgette Sarees</h3><p>Light, flowing and easy to wear through a long evening.</p></div></article>
+        <article class="piece"><div class="cloth c-cotton"></div><div class="info"><h3>Everyday Cotton</h3><p>Soft, simple sarees for daily wear and work.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="occasions" id="occasions">
+    <div class="wrap">
+      <span class="eyebrow">Occasions · मौके</span>
+      <h2>A saree for every occasion</h2>
+      <p class="sub">Tell us where you are going. We will bring out the sarees that suit it.</p>
+      <div class="occ">
+        <div><h3>Weddings</h3><div class="hi">शादी</div><p>For the bride, the family and every guest.</p></div>
+        <div><h3>Festivals</h3><div class="hi">त्योहार</div><p>Eid, Diwali, Karwa Chauth and more.</p></div>
+        <div><h3>Parties</h3><div class="hi">पार्टी</div><p>Something striking for dinners and functions.</p></div>
+        <div><h3>Daily wear</h3><div class="hi">रोज़ के लिए</div><p>Comfortable sarees that last.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap about">
+      <div>
+        <span class="eyebrow">About · हमारे बारे में</span>
+        <h2>Aslam Textile</h2>
+        <p style="margin-top:16px">Aslam Textile is a saree business built on trust. We sell Banarasi sarees and traditional sarees, and we keep every type and every design so you do not have to travel to find what you want.</p>
+        <p>The saree is the traditional dress of India. We take that seriously, from the fabric we choose to the way we help each customer choose.</p>
+      </div>
+      <ul class="facts">
+        <li><b>What we sell</b><span>Banarasi sarees, traditional sarees and sarees in every design</span></li>
+        <li><b>Who we serve</b><span>Brides, families and anyone dressing for an occasion</span></li>
+        <li><b>Our promise</b><span>A brand you can trust, for every occasion</span></li>
+      </ul>
+    </div>
+  </section>
+  <div class="border" aria-hidden="true"></div>
+
+  <section id="contact">
+    <div class="wrap">
+      <span class="eyebrow">Visit us · दुकान का पता</span>
+      <h2>Come see the sarees</h2>
+      <p class="sub">Visit the shop in Mohandabad, near Chowk.</p>
+      <div class="contact-card">
+        <div>
+          <h3>Address</h3>
+          <p id="address">Aslam Textile<br>Mohandabad, Guna Mau<br>Mahrupur, near Chowk<br>Uttar Pradesh</p>
+          <p style="margin-top:10px;color:var(--muted)">मोहंदाबाद, गुना माऊ, महरूपुर, चौक के पास, उत्तर प्रदेश</p>
+        </div>
+        <div>
+          <h3>Phone &amp; WhatsApp</h3>
+          <p class="num" id="phoneText">Number coming soon</p>
+          <div class="actions" style="margin-top:14px">
+            <a class="btn solid" id="waBtn" href="#contact" hidden>Message on WhatsApp</a>
+            <button class="btn copy" id="copyAddr" type="button">Copy address</button>
+          </div>
+          <p id="copyMsg" style="margin-top:10px;color:var(--muted);font-size:.9rem" aria-live="polite"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="border" aria-hidden="true"></div>
+<footer>
+  <span class="brand">Aslam Textile · असलम टेक्सटाइल</span>
+  Banarasi &amp; traditional sarees · Mohandabad, Guna Mau, Mahrupur
+</footer>
+
+<script>
+  // Add the shop's number here, digits only with country code, for example "919876543210"
+  var PHONE = "";
+  (function () {
+    var t = document.getElementById("phoneText");
+    var wa = document.getElementById("waBtn");
+    if (PHONE) {
+      t.textContent = "+" + PHONE.replace(/^(\d{2})(\d{5})(\d{5})$/, "$1 $2 $3");
+      wa.href = "https://wa.me/" + PHONE;
+      wa.hidden = false;
+    }
+    var btn = document.getElementById("copyAddr");
+    var msg = document.getElementById("copyMsg");
+    btn.addEventListener("click", function () {
+      var text = "Aslam Textile, Mohandabad, Guna Mau, Mahrupur, near Chowk, Uttar Pradesh";
+      var done = function () { msg.textContent = "Address copied."; };
+      var fail = function () {
+        var r = document.createRange();
+        r.selectNodeContents(document.getElementById("address"));
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        msg.textContent = "Address selected. Press copy.";
+      };
+      try { navigator.clipboard.writeText(text).then(done, fail); } catch (e) { fail(); }
+    });
+  })();
+</script>
+
+</body></html>
